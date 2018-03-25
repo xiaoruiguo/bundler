@@ -517,6 +517,7 @@ module Bundler
                          :desc => "Open generated gemspec in the specified editor (defaults to $EDITOR or $BUNDLER_EDITOR)"
     method_option :ext, :type => :boolean, :default => false, :desc => "Generate the boilerplate for C extension code"
     method_option :mit, :type => :boolean, :desc => "Generate an MIT license file. Set a default with `bundle config gem.mit true`."
+    method_option :rubocop, :type => :boolean, :desc => "Add rubocop to the generated Rakefile and gemspec"
     method_option :test, :type => :string, :lazy_default => "rspec", :aliases => "-t", :banner => "rspec",
                          :desc => "Generate a test directory for your library, either rspec or minitest. Set a default with `bundle config gem.test rspec`."
     def gem(name)
